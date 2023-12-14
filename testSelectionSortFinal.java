@@ -7,11 +7,11 @@ class testSelectionSortFinal {
 	@Test
 	void testPositives() {
 		SelectionSort list = new SelectionSort();
-		int arr[] = {2,5,9,12,3};
+		int arr[] = {20,50,90,120,30};
 		
 		list.selectionSort(arr);
 		
-		int exp[] = {2,3,5,9,12};
+		int exp[] = {20,30,50,90,120};
 		
 		for(int i =0; i< arr.length; i++) {
 			System.out.print(arr[i] + ", ");
@@ -27,11 +27,11 @@ class testSelectionSortFinal {
 	@Test
 	void testNegatives() {
 		SelectionSort list = new SelectionSort();
-		int arr[] = {-2,-5,-9,-12,-3};
+		int arr[] = {-20,-50,-90,-120,-30};
 		
 		list.selectionSort(arr);
 		
-		int exp[] = {-12,-9,-5,-3,-2};
+		int exp[] = {-120,-90,-50,-30,-20};
 		
 		for(int i =0; i< arr.length; i++) {
 			System.out.print(arr[i] + ", ");
@@ -48,11 +48,11 @@ class testSelectionSortFinal {
 	void testMixed() {
 		
 		SelectionSort list = new SelectionSort();
-		int arr[] = {-2,-5,-9,12,3};
+		int arr[] = {-20,-50,-90,120,30};
 		
 		list.selectionSort(arr);
 		
-		int exp[] = {-9,-5,-2,3,12};
+		int exp[] = {-90,-50,-20,30,120};
 		
 		for(int i =0; i< arr.length; i++) {
 			System.out.print(arr[i] + ", ");
